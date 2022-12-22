@@ -42,14 +42,16 @@
     font-size: 18px;
     line-height: 25px;
     text-transform: capitalize;
-
+/*
+0 top and bot, 1 on right!
+*/
     margin: 0 1rem;
     cursor: pointer;
 }
 
 .gpt3__navbar-sign button,
 .gpt3__navbar-menu_container button {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem; /*padding repalce width and height!*/
     color: #fff;
     background: #FF4820;
     font-family: var(--font-family);
@@ -61,7 +63,6 @@
     cursor: pointer;
     border-radius: 5px;
 }
-
 .gpt3__navbar-menu {
     margin-left: 1rem;
 
