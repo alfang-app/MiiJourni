@@ -14,7 +14,7 @@ const Header = () => {
       <div className="gpt3__header-content">
         <h1 className="gradient__text">Al's website - under construction!</h1>
        
-        <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
+        <p>Website in react! </p>
 
         <div className="gpt3__header-content__input">
           <input type="email" placeholder="Your Email Address" />
@@ -22,11 +22,13 @@ const Header = () => {
         </div>
 
           
-
+{/*
         <div className="gpt3__header-content__people">
           <img src={people} />
           <p>1,600 people requested access a visit in last 24 hours</p>
         </div>
+
+         */}
       </div>
       
       <div className="gpt3__header-image">

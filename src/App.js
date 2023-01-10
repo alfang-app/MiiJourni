@@ -1,23 +1,46 @@
-import React from 'react'
 
+import React, { useEffect } from 'react';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Footer, Blog, Possibility, Features, WhatGPT3, Header } from './containers';
-import { CTA, Brand, Navbar } from './components';
+import { MainNavBar, CTA, Brand, Navbar  } from './components';
+import { About, Home } from './pages';
+
+
+import { FiSettings } from 'react-icons/fi';
+import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
-        <div className="gradient__bg"> 
+      
+
+
+      <BrowserRouter>
+        
+      <div className="gradient__bg"> 
+          <MainNavBar />
           <Navbar />
           <Header />
         </div>
-        <Brand />
-        <WhatGPT3 />
-        <Features />
-        <Possibility />
-        <CTA />
-        <Blog />
-        <Footer /> 
+        <Routes>
+          {/* dashboard  */}
+          <Route path="/" element={(<Home />)} />
+          <Route path="/home" element={(<Home />)} />
+          <Route path="/about" element={(<About />)} />
+
+
+        </Routes>
+      </BrowserRouter>
+
+
+
+
+
+
+
     </div>
   )
 }
