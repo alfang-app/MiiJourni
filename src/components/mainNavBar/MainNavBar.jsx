@@ -7,6 +7,9 @@ import { links } from '../../data/data';
 
 import { SiShopware } from 'react-icons/si';
 import { MdOutlineCancel } from 'react-icons/md';
+import { GoogSignin } from '..';
+
+
 const MainNavBar = () => {
 /*
   const handleCloseSideBar = () => {
@@ -28,7 +31,7 @@ const MainNavBar = () => {
 
 
 
-            <div className="gpt3__navbar-links_container">
+            <div className="gpt3__navbar-links_container" >
 
 
 
@@ -42,7 +45,7 @@ const MainNavBar = () => {
                     <div key={item.title}>
                      
 
-                      <NavLink 
+                      <NavLink class="nav-item"
                         to={`/${item.title}`}
                           key={item.title}
                         
@@ -62,7 +65,8 @@ const MainNavBar = () => {
                         >
 
                           <br/>
-                    <span className="capitalize ">{item.title}</span>
+                    <span className="capitalize  gpt3__navbar-links_container gpt3__navbar-links gpt3__navbar " 
+                    style={{fontSize : "22px"}} >{item.title}</span>
                           
                         </NavLink>
                       
@@ -77,8 +81,19 @@ const MainNavBar = () => {
               {  /* </div>*/}
 
            </div>
+             
         
+        </div> 
+                
+        <GoogSignin />
+        <div className="gpt3__navbar-sign"> 
+
+                          
+
+          <p>Sign in</p>
+          <button type="button">Sign up</button>
         </div>
+
     </div>
   )
 }

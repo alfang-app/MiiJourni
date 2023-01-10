@@ -9,6 +9,8 @@ const Home = () => {
   return (
     <div>
       
+      <Navbar />
+      <Header />
         <WhatGPT3 />
      {/*    <Brand /> <Features />
      //   <Possibility />

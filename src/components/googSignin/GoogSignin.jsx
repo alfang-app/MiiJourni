@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './googSignin.css'
  
 class App extends Component {
  
@@ -55,22 +56,16 @@ class App extends Component {
     render() {
  
         return (
-            <div className="row mt-5">  
-                <div className="col-md-12">
+            <div >  
                { /*  <h2 className="text-left">Google Login Demo</h2> */  }
-                    <div className="card mt-3">
-                        <div className="card-body">
-                             
-                            <div className="row mt-5 mb-5">
-                                <div className="col-md-4 mt-2 m-auto ">
-                                    <button className="loginBtn loginBtn--google" ref="googleLoginBtn">
-                                        Login with Google
-                                    </button>
-                                </div>    
-                            </div>
-                         
-                        </div>
-                    </div>
+
+               
+                <div > 
+                    <button className="loginBtn loginBtn--google  " style={{ margin: "0.2em" ,
+    left: "3"}} ref="googleLoginBtn">
+                            Login with Google
+                    </button>
+                              
                 </div>
             </div>
         );

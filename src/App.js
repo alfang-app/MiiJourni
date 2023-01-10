@@ -22,8 +22,6 @@ const App = () => {
         
       <div className="gradient__bg"> 
           <MainNavBar />
-          <Navbar />
-          <Header />
         </div>
         <Routes>
           {/* dashboard  */}

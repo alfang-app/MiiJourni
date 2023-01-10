@@ -13,9 +13,10 @@ const Menu = () => (
           <>
             <p><a href="#home">Home</a></p>
             <p><a href="#wgpt3">What is miJourni?</a></p>
+            {/* 
             <p><a href="#possibility">Open AI</a></p>
-            <p><a href="#features">Case Studies</a></p>
-            <p><a href="#blog">Library</a></p>
+            <p><a href="#features">Case Studies</a></p> */}
+            <p><a href="#blog">Updates</a></p>
           </>
 )
 
@@ -111,15 +112,6 @@ const Navbar = () => {
       </div>
       
 
-        <div className="gpt3__navbar-sign"> 
-
-         
-            <GoogSignin />
-
-            <p>Sign in</p>
-            <button type="button">Sign up</button>
-          </div>
-         
 
         <div className="gpt3__navbar-menu">
           {toggleMenu
