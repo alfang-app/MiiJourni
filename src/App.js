@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Footer, Blog, Possibility, Features, WhatGPT3, Header } from './containers';
 import { MainNavBar, CTA, Brand, Navbar  } from './components';
-import { About, Home } from './pages';
+import { About, Home, ChatGpt } from './pages';
 
 
 import { FiSettings } from 'react-icons/fi';
@@ -28,6 +28,7 @@ const App = () => {
           <Route path="/" element={(<Home />)} />
           <Route path="/home" element={(<Home />)} />
           <Route path="/about" element={(<About />)} />
+          <Route path="/chatGpt" element={(<ChatGpt />)} />
 
 
         </Routes>

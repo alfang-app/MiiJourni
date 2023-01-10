@@ -9,6 +9,16 @@ export const links = [
           name: 'Home',
         //  icon: <AiOutlineShoppingCart />,
         },
+      ],
+    },
+    {
+      title: 'About',
+      links: [
+        {
+      //    name: 'ordersss',
+          name: 'Home',
+        //  icon: <AiOutlineShoppingCart />,
+        },
         {
           name: 'About',
          // icon: <IoMdContacts />,
@@ -16,7 +26,7 @@ export const links = [
       ],
     },
     {
-      title: 'About',
+      title: 'ChatGpt',
       links: [
         {
       //    name: 'ordersss',
